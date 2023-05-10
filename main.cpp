@@ -42,7 +42,7 @@ int main()
 	logOutput::LogMessage("Unloading Victim driver one...");
 	if (!load_signed::UnloadSignedDriver(load_signed::GetDriverName().c_str()))
 	{
-		logOutput::LogError("Please reload kvdloader");
+		logOutput::LogError("Please reload mapper");
 		system("pause>0");
 		return false;
 	}

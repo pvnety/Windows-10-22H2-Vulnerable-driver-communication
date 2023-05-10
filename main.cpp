@@ -8,7 +8,6 @@ int main()
 
 	if (FindWindowA(NULL, "Test Project"))
 	{
-		logOutput::LogError("Close instance of kvdloader......");
 		logOutput::LogMessage("Press [ENTER] to close");
 		std::cin.get();
 		return false;

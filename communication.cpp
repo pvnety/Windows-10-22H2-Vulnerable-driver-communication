@@ -18,7 +18,7 @@ std::pair<DWORDLONG, DWORD> communication::AllocateContigiousMemory(ULONG Number
 	DWORDLONG InputArg[2];
 	*InputArg = NumberOfBytes;
 
-	DWORD BytesReturned = 5;
+	DWORD BytesReturned = NULL;
 	DeviceIoControl(GlobalDriverHandle, 0x222880, &InputArg, sizeof(InputArg),
 		&InputArg, sizeof(InputArg), &BytesReturned,
 		nullptr);
